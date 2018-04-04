@@ -10,8 +10,13 @@ After filling out name, email, and password(Pleae note that password has to be g
 After clicking on register, you have an account now. 
 Input the email and password you just created into the login form.
 Clicking on login, there will be showing a blank page, for some reason.
-Please refresh the page one more time, and fill out the login form again. Then, you are able to successfully log in.
+Please refresh the page one more time, and fill out the login form again. Then, you are able to log in successfully.
 
-After logging in, there will be a task form. By filling that, you are able to assign tasks to any user. 
-Clicking on feed, you are able to see all tasks. 
-Clikcing on all the users, you are able to see all users.
+After logging in, the page is redirected to feed page. There will be a task form. By filling that, you are able to assign tasks to any user. 
+After clicking on "submit", you create a task.
+All tasks are listed under the task form.
+
+Clicking on feed, you are able to see the new task form and all tasks. 
+Clicking on "All Users", you are able to see all users, and click on each user, you are able to see the tasks assigned to him/her.
+
+You can click on log out to log out anytime you want.
