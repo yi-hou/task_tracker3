@@ -26,11 +26,12 @@ let LoginForm = connect(({login}) => {return {login};}) ((props) => {
               onChange={update} />
       </FormGroup>
       <FormGroup>
-        <Input type="password" name="pass" placeholder="password"
+        <Input type="password" name="password" placeholder="password"
               value={props.login.pass} onChange={update} />
       </FormGroup>
      <Button onClick={create_token}>Log In</Button>
     </Form>
+
   </div>;
 });
 

@@ -9,7 +9,5 @@ defmodule TaskTracker3Web.TokenView do
     }
   end
 
-  def render("delete_token.json", %{}) do
-    %{}
-  end
+
 end

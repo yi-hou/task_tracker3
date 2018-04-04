@@ -7,6 +7,7 @@ import Nav from './nav';
 import Feed from './feed';
 import Users from './users';
 import TaskForm from './task-form';
+import RegisterForm from './register';
 
 export default function task_tracker3_init(store) {
   ReactDOM.render(
@@ -18,14 +19,25 @@ export default function task_tracker3_init(store) {
 }
 
 let TaskTracker3 = connect((state) => state)((props) => {
+
+  let task_form;
+   if(props.form.token) {
+     task_form = <div>
+     <TaskForm />
+     <Tasks tasks={props.tasks} />
+     </div>;
+   }
+   else{
+     task_form=<RegisterForm />;
+   }
+
      return (
        <Router>
          <div>
            <Nav />
            <Route path="/" exact={true} render={() =>
              <div>
-                <TaskForm />
-                <Feed tasks={props.tasks} />
+                { task_form }
              </div>
            } />
            <Route path="/users" exact={true} render={() =>
@@ -39,4 +51,5 @@ let TaskTracker3 = connect((state) => state)((props) => {
           </div>
         </Router>
      );
-   });
+
+  });

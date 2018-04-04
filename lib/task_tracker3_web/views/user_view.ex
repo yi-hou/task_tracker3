@@ -15,4 +15,13 @@ defmodule TaskTracker3Web.UserView do
       name: user.name,
       email: user.email}
   end
+
+  def render("token.json", %{user: user, token: token}) do
+    %{
+      user_id: user.id,
+      name: user.name,
+      email: user.email,
+      token: token,
+    }
+  end
 end
