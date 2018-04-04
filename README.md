@@ -13,6 +13,5 @@ Clicking on login, there will be showing a blank page, for some reason.
 Please refresh the page one more time, and fill out the login form again. Then, you are able to successfully log in.
 
 After logging in, there will be a task form. By filling that, you are able to assign tasks to any user. 
-
 Clicking on feed, you are able to see all tasks. 
 Clikcing on all the users, you are able to see all users.
